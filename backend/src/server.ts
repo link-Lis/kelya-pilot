@@ -23,5 +23,7 @@ import authRoutes from "./auth.js";
 app.use("/auth", authRoutes);
 import clientsRoutes from "./clients.js";
 app.use("/clients", clientsRoutes);
+import scoreRoutes from "./score.js";
+app.use("/score", scoreRoutes);
 
 
