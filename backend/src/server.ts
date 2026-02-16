@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 import authRoutes from "./auth";
 import clientsRoutes from "./clients";
 import scoreRoutes from "./score";
+import helmet from "helmet";
+
+app.use(helmet());
 
 dotenv.config();
 
