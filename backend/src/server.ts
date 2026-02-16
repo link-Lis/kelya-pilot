@@ -19,11 +19,3 @@ app.get("/health", (_req, res) => {
 
 const PORT = Number(process.env.PORT || 4000);
 app.listen(PORT, () => console.log(`API listening on :${PORT}`));
-import authRoutes from "./auth.js";
-app.use("/auth", authRoutes);
-import clientsRoutes from "./clients.js";
-app.use("/clients", clientsRoutes);
-import scoreRoutes from "./score.js";
-app.use("/score", scoreRoutes);
-
-
